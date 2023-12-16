@@ -2,6 +2,12 @@ import { Card, Container, Col, Row } from "react-bootstrap";
 import HomeBreadcrumbs from "../../components/navigation/home/HomeBreadcrumbs";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+/**
+ * Again, you can make this more modular and componentized.
+ * 
+ */
+
+
 const InteractiveArtPage = () => {
   return (
     <>

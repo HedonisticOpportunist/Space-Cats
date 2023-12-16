@@ -11,6 +11,7 @@ const UploadWorkForm = () => {
   const [url, setURL] = useState("");
 
   // HANDLE UPLOAD FUNCTION
+  // useCallback
   const handleUpload = async () => {
     let response = await upload(title, description, url);
     if (response) {
@@ -24,6 +25,7 @@ const UploadWorkForm = () => {
   };
 
   // HANDLE SUBMIT FUNCTION
+  //useCallback
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (description === "" || title === "" || url === "") {

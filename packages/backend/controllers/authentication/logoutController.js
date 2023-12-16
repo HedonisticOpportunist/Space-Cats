@@ -6,6 +6,7 @@ const logger = require("pino")();
 // LOGOUT CONTROLLER //
 module.exports.logout = async (_req, res, next) => {
   try {
+    //You're clearing the token from the cookie? You're not using cookies
     res.clearCookie("token");
     res
       .status(201)

@@ -9,6 +9,7 @@ const UnsubscribeForm = () => {
   const [message, setMessage] = useState("");
 
   // UNSUBSCRIBE FUNCTION
+  // useCallback 
   const handleUnsubscribe = async () => {
     let response = await unsubscribe(email);
     if (response) {
@@ -20,6 +21,7 @@ const UnsubscribeForm = () => {
   };
 
   // SUBMIT FUNCTION
+  // useCallback
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (email === "" || !email.includes("@") || email === null) {

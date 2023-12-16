@@ -1,7 +1,7 @@
 import { Card, Container, Col, Row } from "react-bootstrap";
 import HomeBreadcrumbs from "../../../../components/navigation/home/HomeBreadcrumbs";
 import { Link } from "react-router-dom";
-
+//Again, comoponentize
 const CreditsPage = () => {
   return (
     <>

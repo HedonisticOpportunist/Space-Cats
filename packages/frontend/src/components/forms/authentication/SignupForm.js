@@ -15,6 +15,7 @@ const SignupForm = () => {
   const [message, setMessage] = useState("");
 
   // HANDLE SIGN UP FUNCTION
+  //useCallback
   const handleSignup = async () => {
     let response = await signup(username, email, password);
     if (response.success) {
@@ -30,10 +31,12 @@ const SignupForm = () => {
     setPassword(password);
 
     //Credit: @ https://medium.com/@furqanistic/decoding-jwt-secure-authentication-in-mern-applications-23cd7141e2f
+    //again, consider sessionStorage instead of localStorage
     localStorage.setItem("token", response.token);
   };
 
   // SUBMIT FUNCTION
+  //useCallback
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (username === "" || email === "" || password === "") {

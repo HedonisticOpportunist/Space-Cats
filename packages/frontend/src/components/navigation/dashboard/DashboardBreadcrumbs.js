@@ -3,6 +3,8 @@ import DashboardHeader from "../../ui/dashboard/DashboardHeader";
 import { Link } from "react-router-dom";
 
 const DashboardBreadcrumbs = () => {
+  //can drop the return as you're not doing anything else in the function
+  //const DashboardBreadcrumbs = () => (<>...</>);
   return (
     <>
       <Container fluid>

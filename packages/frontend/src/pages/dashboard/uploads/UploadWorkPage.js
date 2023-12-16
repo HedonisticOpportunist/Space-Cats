@@ -3,6 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import ReturnToDashboardBreadcrumbs from "../../../components/navigation/dashboard/ReturnToDashboardBreadcrumbs";
 import UploadWorkForm from "../../../components/forms/upload/UploadWorkForm";
 
+//Componentize things into reusable chunks. 
 const UploadWorkPage = () => {
   return (
     <>

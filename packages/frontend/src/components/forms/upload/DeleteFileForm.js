@@ -9,6 +9,7 @@ const DeleteFileForm = () => {
   const [message, setMessage] = useState("");
 
   // HANDLE DELETE FUNCTION
+  // useCallback
   const handleDelete = async () => {
     let response = await deleteFile(title);
     if (response) {
@@ -20,6 +21,7 @@ const DeleteFileForm = () => {
   };
 
   // HANDLE SUBMIT FUNCTION
+  //useCallback
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (title === "" || title === null || title.includes("@")) {

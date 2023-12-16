@@ -9,6 +9,7 @@ const UploadedFilesPage = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
+    //How is this not an infinite loop? You are setting data, which is a dependency of the useEffect.
     async function getFileData() {
       let data = await getFiles();
       if (data.success) {

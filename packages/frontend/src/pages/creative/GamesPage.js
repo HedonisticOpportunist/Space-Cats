@@ -2,6 +2,21 @@ import { Card, Container, Col, Row } from "react-bootstrap";
 import HomeBreadcrumbs from "../../components/navigation/home/HomeBreadcrumbs";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+/**
+ * Something like this component can be simplified and broken down to make more use of 
+ * reacts component architecture. 
+ * 
+ * You have your list of games, but they are using the same code to render the links. 
+ * 
+ * You should break down these into the smallest modular components as possible. At the very 
+ * least I would consider making a component for the game links (GameCard) or something, 
+ * and defining the game title, image, and link as props. 
+ * 
+ * You can then build an array of game data and map over it to render the game cards.
+ * 
+ * 
+ */
+
 const GamesPage = () => {
   return (
     <>

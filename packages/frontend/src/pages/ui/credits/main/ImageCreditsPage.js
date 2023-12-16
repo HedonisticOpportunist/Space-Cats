@@ -2,6 +2,7 @@ import { Card, Container, Col, Row } from "react-bootstrap";
 import CreditsBreadcrumbs from "../../../../components/navigation/home/CreditsBreadcrumbs";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+//Sooo much repeated code lol. 
 const ImageCreditsPage = () => {
   return (
     <>

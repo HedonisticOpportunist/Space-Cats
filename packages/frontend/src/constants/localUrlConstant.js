@@ -1,5 +1,7 @@
 const hostUrl = "http://localhost:5000";
 
+//strig + string is messy. I'd consider es6 template literals here.
+
 export const localUrlConstants = {
   // MAIN ENDPOINT
   MAIN_ENDPOINT: hostUrl,

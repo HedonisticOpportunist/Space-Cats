@@ -10,6 +10,9 @@ const User = require("../../models/user/userModel");
 module.exports.login = async (req, res, next) => {
   try {
     const { email, password } = req.body;
+    //Consider more validation. here. Make the assumption someone is going to try and break your app.
+    //I would consider a password policy and email validation (regex) at the very least as requests
+    //may not be coming via a form. 
     if (!email || !password) {
       return res.json({
         message: "The email and password fields are required.",

@@ -9,6 +9,7 @@ const SubscribeForm = () => {
   const [message, setMessage] = useState("");
 
   // HANDLE SUBSCRIBE FUNCTION
+  // useCallback
   const handleSubscribeResponse = async () => {
     let response = await subscribe(email);
     if (response) {
@@ -20,6 +21,7 @@ const SubscribeForm = () => {
   };
 
   // SUBMIT SUBSCRIBE FUNCTION
+  // useCallback
   const handleSubscribe = async (e) => {
     e.preventDefault();
     if (email === "" || !email.includes("@") || email === null) {

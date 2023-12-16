@@ -7,6 +7,10 @@ import { useEffect, useState } from "react";
 const LandingPage = () => {
   const [data, setData] = useState(null);
 
+  //useCallback. Or you can scrap the useEffect and do all this ina  useMemo. 
+  //const data = useMemo(async () => {
+    //setData(await getWelcomeMessage());
+  //});
   async function fetchData() {
     const message = await getWelcomeMessage();
     setData(message);

@@ -20,6 +20,9 @@ originUrl =
 // THIRD PARTY MIDDLEWARE
 // Credit: @ https://www.freecodecamp.org/news/how-to-secure-your-mern-stack-application/
 // Any further modifications and errors are mine and mine alone.
+
+//Cors policies looks well defined. I would consider using helmet.js to also add Content-Security-Policy headers. 
+
 app.use(
   cors({
     credentials: true,
